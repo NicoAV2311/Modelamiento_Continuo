@@ -1,0 +1,20 @@
+# Operaciones matemáticas y manejo eficiente de arreglos numéricos
+numpy
+
+# Manipulación y análisis de datos en estructuras tipo DataFrame
+pandas
+
+# Visualización de datos mediante gráficos y figuras
+matplotlib
+
+# Creación de aplicaciones web interactivas para visualización y análisis de datos
+streamlit
+
+# Algoritmos y herramientas para machine learning y modelado estadístico
+scikit-learn
+
+# Generación de archivos PDF de manera sencilla
+fpdf
+
+# unciones avanzadas de matemáticas, optimización y procesamiento de señales
+scipy
