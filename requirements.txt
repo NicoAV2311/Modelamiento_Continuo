@@ -1,20 +1,25 @@
-# Operaciones matemáticas y manejo eficiente de arreglos numéricos
+# --------------------------------------
+# Requerimientos del proyecto de simulación
+# Crecimiento de fríjol con modelos matemáticos
+# --------------------------------------
+
+# Manejo de arreglos numéricos y operaciones matemáticas
 numpy
 
-# Manipulación y análisis de datos en estructuras tipo DataFrame
+# Manipulación de datos en tablas y exportación
 pandas
 
-# Visualización de datos mediante gráficos y figuras
+# Gráficas y visualización de resultados
 matplotlib
 
-# Creación de aplicaciones web interactivas para visualización y análisis de datos
+# Interfaz web interactiva para la aplicación
 streamlit
 
-# Algoritmos y herramientas para machine learning y modelado estadístico
+# Modelos de regresión, polinomiales y métricas de error
 scikit-learn
 
-# Generación de archivos PDF de manera sencilla
+# Generación de reportes en formato PDF
 fpdf
 
-# unciones avanzadas de matemáticas, optimización y procesamiento de señales
+# Funciones matemáticas avanzadas, ajuste de curvas (curve_fit), estadística y métodos de interpolación
 scipy
