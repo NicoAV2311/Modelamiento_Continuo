@@ -1,9 +1,10 @@
+
 # Aplicación de Modelado del Crecimiento de una Planta de Fríjol
 
 ## Descripción General
-Esta aplicación, desarrollada en **Python con Streamlit**, permite **analizar, modelar y visualizar** el crecimiento de una planta de fríjol a partir de datos experimentales en formato CSV.  
+Esta aplicación, desarrollada en **Python con Streamlit**, permite **analizar, modelar y visualizar** el crecimiento de una planta de fríjol a partir de datos experimentales en formato CSV.
 
-Incluye distintos modelos matemáticos de ajuste, cálculos de métricas de error, estadísticas descriptivas, correlaciones y la exportación de reportes en PDF con gráficos y resultados.  
+Incluye distintos modelos matemáticos de ajuste, cálculos de métricas de error, estadísticas descriptivas, correlaciones y la exportación de reportes en PDF con gráficos y resultados.
 
 La versión presentada corresponde a una **extensión mejorada** respecto a versiones previas, incorporando nuevas funcionalidades de análisis, interpolación y exportación.
 
@@ -12,45 +13,41 @@ La versión presentada corresponde a una **extensión mejorada** respecto a vers
 ## Funcionalidades Principales
 1. **Carga de datos en CSV** (con columnas `Dia` y `Altura_cm`).
 2. **Selección de modelos matemáticos**:
-   - Lineal
-   - Polinómico (grado variable)
-   - Exponencial
-   - Logístico
+  - Lineal
+  - Polinómico (grado variable)
+  - Exponencial
+  - Logístico
 3. **Entrenamiento automático** de cada modelo y cálculo de la ecuación ajustada.
 4. **Interpolación adaptativa** según el modelo seleccionado.
 5. **Cálculo de métricas de error**:
-   - MSE, RMSE, MAE, MAPE
-   - R²
-   - Bias
-   - Varianzas y covarianza
-   - Correlaciones de Pearson y Spearman
+  - MSE, RMSE
+  - R²
+  - Varianzas y covarianza
 6. **Estadísticas descriptivas** (manuales y automáticas):
-   - Media, Varianza, Desviación Estándar
-   - Coeficiente de Variación
-   - Mediana, Q1, Q3
-   - Intervalos de confianza (IC 95%)
+  - Media, Varianza, Desviación Estándar
+  - Coeficiente de Variación
+  - Mediana
 7. **Visualización gráfica** interactiva de los datos, predicciones e interpolaciones.
 8. **Generación de reportes en PDF** con:
-   - Enunciado del ejercicio
-   - Datos cargados
-   - Resultados del modelo
-   - Métricas de error
-   - Estadísticas descriptivas
-   - Gráficas
+  - Enunciado del ejercicio
+  - Datos cargados
+  - Resultados del modelo
+  - Métricas de error
+  - Estadísticas descriptivas
+  - Gráficas explicadas
 9. **Descarga directa del reporte en PDF** desde la interfaz de Streamlit.
 
 ---
 
 ## Estructura del Proyecto
-📦 proyecto_frijol
-┣ app.py # Código principal de la aplicación (Streamlit)
-┣ README.md # Documento explicativo del proyecto
-┣ requirements.txt # Dependencias necesarias
-┣ grafico.png # Imagen temporal generada para el PDF
-┣ reporte_frijol_extendido.pdf # Ejemplo de reporte generado
-┗ data
-┗ ejemplo.csv # Archivo de datos de prueba
-
+Reto 1 Actualizado
+┣ Nuevas Pruebas codigo.py  # Código principal de la aplicación (Streamlit)
+┣ README.md                 # Documento explicativo del proyecto
+┣ requirements.txt          # Dependencias necesarias
+┣ grafico.png               # Imagen temporal generada para el PDF
+┣ Reporte Reto 1.pdf        # Ejemplo de reporte generado
+┗ data/
+   ┗ ejemplo.csv           # Archivo de datos de prueba
 
 ---
 
@@ -79,7 +76,7 @@ La versión presentada corresponde a una **extensión mejorada** respecto a vers
 
 ### 6. **Visualización y Reportes**
 - `plot_results`: Genera gráficos en Streamlit.
-- `export_pdf`: Crea un reporte PDF con resultados, métricas y gráfica.
+- `export_pdf`: Crea un reporte PDF con resultados, métricas y gráficas explicadas.
 
 ### 7. **Aplicación Streamlit**
 - `main`: Interfaz gráfica que permite cargar datos, seleccionar modelo, entrenar, visualizar métricas y exportar reporte.
@@ -90,27 +87,25 @@ La versión presentada corresponde a una **extensión mejorada** respecto a vers
 - Se añadió **modelo logístico** con ajuste mediante `curve_fit`.
 - Se implementó **interpolación automática** según el modelo.
 - Se incluyeron **estadísticas descriptivas avanzadas** (cuartiles, coeficiente de variación, intervalos de confianza).
-- Se incorporaron **métricas adicionales**: Bias, Pearson, Spearman.
-- Se desarrolló un **reporte PDF extendido** con resultados completos y gráficas.
+- Se desarrolló un **reporte PDF extendido** con resultados completos y gráficas explicadas.
 - Se centralizaron los cálculos de métricas de error y descriptivas en funciones auxiliares.
 - Se mejoró la interfaz en **Streamlit** para mayor interactividad.
 
 ---
 
 ## Entregables
-1. **Código fuente completo** (`app.py`).
+1. **Código fuente completo** (`Nuevas Pruebas codigo.py`).
 2. **Archivo README.md** documentado.
 3. **Archivo requirements.txt** con dependencias:
-numpy
-pandas
-matplotlib
-streamlit
-scikit-learn
-fpdf
-scipy
-
+  - numpy
+  - pandas
+  - matplotlib
+  - streamlit
+  - scikit-learn
+  - fpdf
+  - scipy
 4. **Archivo CSV de ejemplo** (`data/ejemplo.csv`) para pruebas.
-5. **Reporte PDF de ejemplo** (`reporte_frijol_extendido.pdf`).
+5. **Reporte PDF de ejemplo** (`Reporte Reto 1.pdf`).
 
 ---
 
@@ -118,58 +113,70 @@ scipy
 
 ### 1. Clonar el repositorio
 
+```bash
 git clone https://github.com/NicoAV2311/Modelamiento_Continuo.git
-cd Modelamiento Continuo
-
-###
+cd "Modelación y Simulación de sistemas/Reto 1 Actualizado"
+```
 
 ### 2. Instalar Dependencias
+
+```bash
 pip install -r requirements.txt
+```
 
 ### 3. Ejecutar Aplicación
-python -m streamlit run Prueba de app con mejoras visuales para lo del frijol.py
 
-### 4. Integración
+```bash
+streamlit run "Nuevas Pruebas codigo.py"
+```
+
+### 4. Integración y Uso
 1. Cargar un archivo CSV con datos de crecimiento
 2. Seleccionar modelo de ajuste
-3. Entregar y visualizar metricas y graficas
+3. Visualizar métricas y gráficas
 4. Descargar reporte PDF
 
-Ejemplo de datos CSV
-0	0,59
-1	1,18
-2	2,1
-3	3,42
-4	5,13
-5	7,19
-6	9,54
-7	12,08
-8	14,72
-9	17,35
-10	19,91
-11	22,33
-12	24,58
-13	26,64
-14	28,48
-15	30,12
-16	31,56
-17	32,82
-18	33,91
-19	34,84
-20	35,64
-21	36,33
-22	36,91
-23	37,4
-24	37,82
-25	38,17
-26	38,46
-27	38,71
-28	38,92
-29	39,1
-30	39,24
+#### Ejemplo de datos CSV
 
-Autores
-Nicolas Arango Vergara
-Sebastian Gomez Sepulveda
-Santiago Hoyos Araque
-Juan Pablo Zapata Arenas
+```
+Dia;Altura_cm
+0;0,59
+1;1,18
+2;2,1
+3;3,42
+4;5,13
+5;7,19
+6;9,54
+7;12,08
+8;14,72
+9;17,35
+10;19,91
+11;22,33
+12;24,58
+13;26,64
+14;28,48
+15;30,12
+16;31,56
+17;32,82
+18;33,91
+19;34,84
+20;35,64
+21;36,33
+22;36,91
+23;37,4
+24;37,82
+25;38,17
+26;38,46
+27;38,71
+28;38,92
+29;39,1
+30;39,24
+```
+
+---
+
+## Autores
+- Nicolas Arango Vergara
+- Sebastian Gomez Sepulveda
+- Santiago Hoyos Araque
+- Juan Pablo Zapata Arenas
